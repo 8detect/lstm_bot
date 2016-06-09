@@ -82,6 +82,11 @@ for iteration in range(0, ITERATIONS):
 
         generated=''
         seed = "science and the future "
+        input_len = len(seed)
+        pad_len = maxlen - input_len
+        pad = " " * pad_len
+        seed = pad + seed
+
         generated += seed
 
         print('----- Generating with seed: "' + seed + '"')
