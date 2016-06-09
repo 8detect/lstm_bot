@@ -27,10 +27,10 @@ char_indices = dict((c, i) for i, c in enumerate(chars))
 indices_char = dict((i, c) for i, c in enumerate(chars))
 
 index_list = [char_indices, indices_char]
-pickle.dump(index_list, open('les_mis_index_list.pkl', 'wb'))
+pickle.dump(index_list, open('ham_index_list.pkl', 'wb'))
 
 # remaining train code expects the corpus to be text
-text = les_mis_txt
+text = hamilton_txt
 # cut the text in semi-redundant sequences of maxlen characters
 maxlen = 80
 step = 3
